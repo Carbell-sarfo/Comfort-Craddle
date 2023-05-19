@@ -83,12 +83,38 @@
 
     
 }
+// End of Section Hero
+
+
+
+
+// ================== About Us ====================
+.section-about {
+    padding: 10rem 0;
+    border-bottom: 1px solid #dbdbdb;
+
+
+    .about-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem 5rem;
+
+    }
+
+    .about-gallery {
+        display: grid;
+        padding-top: 5rem;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
 
 
 
 // ============= SECTION TESTIMONIAL ===============
 .section-testimonials {
-    padding: 15rem 0 4rem;
+    padding: 10rem 0 4rem;
     background: var(--clr-gray-light);
 
     .testimonials-container {
@@ -198,7 +224,30 @@
         }
     }
 }
+// end of testionial section
 
+
+
+// =================== SECTION BANNER ==============
+.section-banner {
+    background-image: linear-gradient(to right, rgba(77, 121, 90, 0.897), rgba(78, 121, 91, 0.911)), url(/assets/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+
+    h1 {
+        color: var(--clr-gray-light);
+        font-size: 4rem;
+        // position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+    }
+    
+}
 
 
 
@@ -338,13 +387,30 @@
 
 @media screen and (min-width: 769px) {
 
+    .section-about {
+        
+        .about-container {
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+        }
+        .about-gallery {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            gap: 2rem;
+        }
+    }
     
 }
 
 
 
 @media screen and (max-width: 768px) {
-    
+    .section-hero {
+
+        .hero-container {
+            grid-template-columns: 1fr;
+        }
+    }
     
 }
 
