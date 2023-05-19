@@ -1,0 +1,55 @@
+
+.portfolio-page {
+    padding-top: 15rem;
+}
+
+
+.portfolio-page__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+
+
+.photography {
+    margin: 15rem 0 5rem 0;
+}
+.photography-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    .photo {
+        @include ease(.3s);
+
+        &:hover, &:focus {
+            scale: 1.03;
+        }
+    }
+}
+
+
+
+
+// //////////////////////////////////
+//       MEDIA QUERIES
+// /////////////////////////////////
+
+
+@media screen and (min-width: 501px) {
+
+    .photography-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width: 769px) {
+
+    .portfolio-page__container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .photography-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

@@ -1,0 +1,14 @@
+ISSUES
+1. on desktop mode, when you click the nav-links, it adds no-scroll to the body and that is wrong.
+
+2. problems with links to different pages.
+
+
+
+
+
+
+
+
+ABOUT ME DATA
+0202009444
