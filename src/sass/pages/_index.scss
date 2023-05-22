@@ -2,6 +2,9 @@
 .section-coming {
     width: 100%;
     height: 100vh;
+    background-image: url(/assets/coming-bg.jpg);
+    background-size: cover;
+    background-position: center;
 
     .coming-text {
         width: 100%;
@@ -11,14 +14,30 @@
         align-items: center;
         justify-content: center;
         text-align: center;
+        padding-top: 5rem;
+
+        img {
+            width: 300px;
+            margin-bottom: 1rem;
+            opacity: 0;
+            animation: slidedown 1s ease-in-out forwards;
+        }
 
         h1 {
             font-size: 5rem;
             line-height: 1;
+            opacity: 0;
+            animation: fadein .6s ease-in 1s forwards;
         }
 
         p {
             margin: 2rem 0;
+            opacity: 0;
+            animation: fadein .6s ease-in 1.2s forwards;
+        }
+        .btn {
+            opacity: 0;
+            animation: fadein .6s ease-in 1.2s forwards, scroll-down 1s ease-in-out infinite 1.4s forwards;
         }
     }
 }
