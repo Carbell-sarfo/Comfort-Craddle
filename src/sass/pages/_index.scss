@@ -48,7 +48,7 @@
 // == Section-hero ==
 .section-hero {
     width: 100%;
-    min-height: 95vh;
+    height: 90vh;
     background-image: url(/assets/coming-bg.jpg);
     background-size: cover;
     background-position: left;
@@ -192,7 +192,7 @@
 .section-value {
     Padding: 10rem 0;
 
-    .value {
+    .value, .value-2 {
         display: grid;
         grid-template-columns: 1fr;
         background-color: var(--clr-white);
@@ -335,14 +335,23 @@
 
 // =================== SECTION BANNER =====================
 .section-banner {
-    background-image: linear-gradient(to right, rgba(77, 121, 90, 0.897), rgba(78, 121, 91, 0.911)), url(/assets/banner.jpg);
-    background-size: cover;
-    background-position: center;
     min-height: 70vh;
-    padding: 5rem;
+    padding: 5rem 0;
     display: flex;
     align-items: center;
     position: relative;
+    overflow: hidden;
+    color: var(--clr-white);
+
+    .video {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -2;
+        object-fit: cover;
+    }
 
     .overlay {
         position: absolute;
@@ -352,16 +361,15 @@
         bottom: 0;
         width: 100%;
         height: 100%;
+        z-index: -1;
+        background-color: rgba(var(--clr-green-rgb), .85);
     }
 
     h1 {
         color: var(--clr-gray-light);
-        font-size: 5rem;
+        font-size: 7rem;
         line-height: 1;
-        // position: absolute;
-        // top: 50%;
-        // left: 50%;
-        // transform: translate(-50%, -50%);
+        margin-bottom: 2rem;
     }
     
 }
@@ -521,6 +529,10 @@
         .value {
             grid-template-columns: 1fr 3fr;
         }
+        .value-2 {
+            grid-template-columns: 3fr 1fr;
+            grid-auto-flow: reverse;
+        }
     }
     
 }
@@ -536,6 +548,26 @@
             .hero-image {
                 display: none;
             }
+        }
+    }
+
+    // Value Proposition
+    .section-value {
+
+        .value_img {
+            height: 300px;
+            
+
+            img {
+                
+            }
+        }
+    }
+    
+    .section-banner {
+
+        h1 {
+            font-size: 3rem;
         }
     }
 
