@@ -197,7 +197,12 @@
 .btn-neutral {
     background-color: var(--clr-cream);
     color: #000;
-    border: 2px solid var(--clr-black);
+    border: 2px solid var(--clr-green);
+
+    &:hover, &:focus {
+      background-color: #fff;
+      color: Var(--clr-black);
+    }
 }
 .btn-thin {
     padding: 2rem 3rem;

@@ -1,36 +1,6 @@
-.dark-theme {
-    --clr-white: #0C0C0C;
-    --clr-black: #fff;
-    --clr-white-rgb: 0, 0, 0;
-    --clr-gray-light: #111111;
-    --clr-gray-dark-1: #5e5e5e;
-    --clr-gray-dark-2: #E9EAED;
 
-    // --clr-white: #ffffff;
-    // --clr-white-rgb: 255, 255, 255;
-    // --clr-black: #0C0C0C;
-    // --clr-gray-light: #E9EAED;
-    // --clr-gray-dark-1: #878787;
-    // --clr-gray-dark-2: #212222;
 
-    
-}
 
-.light-theme {
-    --clr-white: #ffffff;
-    --clr-white-rgb: 255, 255, 255;
-    --clr-black: #0C0C0C;
-    --clr-gray-light: #E9EAED;
-    --clr-gray-dark-1: #878787;
-    --clr-gray-dark-2: #212222;
-
-    // --clr-white: #0C0C0C;
-    // --clr-black: #fff;
-    // --clr-white-rgb: 0, 0, 0;
-    // --clr-gray-light: #111111;
-    // --clr-gray-dark-1: #5e5e5e;
-    // --clr-gray-dark-2: #E9EAED;
-}
 .no-scroll {
     overflow-y: hidden;
 }
@@ -41,4 +11,12 @@
 
 .box-shadow {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.207);
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity .6s ease-in;
+}
+.fade-in.appear {
+    opacity: 1;
 }
